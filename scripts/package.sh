@@ -20,7 +20,7 @@ else
   bin="$(pwd)/.build/universal-bin"
   for product in AstraBar astra-usage; do
     lipo -create "$arm_bin/$product" "$intel_bin/$product" -output "$bin/$product"
-    lipo -verify_arch arm64 x86_64 "$bin/$product"
+    lipo "$bin/$product" -verify_arch arm64 x86_64
   done
   architecture=universal
 fi
