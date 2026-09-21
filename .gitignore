@@ -1,0 +1,13 @@
+.build/
+.swiftpm/
+dist/
+.DS_Store
+*.xcuserstate
+.env
+.env.*
+*.pem
+*.p12
+auth.json
+*rollout*.jsonl
+private-evidence/
+docs/history-session/
